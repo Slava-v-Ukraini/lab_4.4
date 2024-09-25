@@ -18,7 +18,7 @@ int main()
 	cout << "---------------------------" << endl;
 	
 	x = xp;
-	x += dx;
+	x <= xk;
 
 	if (x <= -2)
 		y = x + 3;
@@ -30,9 +30,11 @@ int main()
 				y = -R;
 			else
 				if (8 - R < x && x <= 8 + R)
-					y = sqrt(-(R * R - (x - 8) * (x + 8) - R));
+					y = sqrt(R * R - (x - 8) * (x - 8));
 				else
 					y = -R;
+	x += dx;
+
 	cout << "|" << setw(7) << setprecision(2) << x
 		<< " |" << setw(10) << setprecision(3) << y
 		<< " |" << endl;
